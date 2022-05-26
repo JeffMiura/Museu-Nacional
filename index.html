@@ -17,29 +17,87 @@ referrerpolicy="no-referrer"
 <![endif]-->
   </head>
   <body>
-    <!-- Início container -->
-    <div id="container">
-      <!-- Início header -->
-      <header>
-        <div id="logo">
-          <h1><a href="">Museu Nacional</a></h1>
+    <!-- Início header -->
+    <header id="container">
+      <div id="logo">
+        <h1><a href="">Museu Nacional</a></h1>
+      </div>
+      <!-- Início nav -->
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Exposições</a></li>
+          <li><a href="">Pesquisa</a></li>
+          <li><a href="">Acervo</a></li>
+          <li><a href="">Vídeos</a></li>
+          <li><a href="">Fotos</a></li>
+          <li><a href="">Contato</a></li>
+        </ul>
+      </nav>
+      <!-- Fim nav -->
+    </header>
+    <!-- Fim header -->
+    <main id="principal">
+      <div id="conteudo">
+        <section id="capa">
+          <img src="assets/museu.png" alt="" />
+        </section>
+      </div>
+      <aside>
+        <section id="depoimento">
+          <img src="assets/depoimento.png" alt="" />
+        </section>
+        <section id="visita">
+          <h4>Faça uma visita</h4>
+          <form action="">
+            <fieldset>
+              <legend>Selecione uma data</legend>
+              <label for="data">Data</label>
+              <input
+                class="campo"
+                type="text"
+                name=""
+                id="data"
+                value="dd/mm/aaaa"
+              />
+              <label for="qtd">Qrd pessoas</label>
+              <input
+                style="width: 30px"
+                class="campo"
+                type="text"
+                name=""
+                id="qtd"
+                value="1"
+              />
+            </fieldset>
+            <input
+              class="botao"
+              type="submit"
+              value="Verificar disponibilidade"
+            />
+          </form>
+        </section>
+        <div>
+          <h4>Galeria de fotos</h4>
         </div>
-        <!-- Início nav -->
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Exposições</a></li>
-            <li><a href="">Pesquisa</a></li>
-            <li><a href="">Acervo</a></li>
-            <li><a href="">Vídeos</a></li>
-            <li><a href="">Fotos</a></li>
-            <li><a href="">Contato</a></li>
-          </ul>
-        </nav>
-        <!-- Fim nav -->
-      </header>
-      <!-- Fim header -->
-    </div>
+        <section id="galeria">
+          
+          <a href="">
+            <img src="assets/imagem1.jpg" alt="salão do museu nacional">
+          </a>
+          <a href="">
+            <img src="assets/imagem2.jpg" alt="salão do museu nacional">
+          </a>
+          <a href="">
+            <img src="assets/imagem3.jpg" alt="salão do museu nacional vestido">
+          </a>
+          <a href="">
+            <img src="assets/imagem4.jpg" alt="salão do museu nacional quadros ">
+          </a>
+        </section>
+      </aside>
+    </main>
+
     <!-- Fim container -->
   </body>
 </html>
