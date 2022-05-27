@@ -1,4 +1,14 @@
 /* Estrutura do site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
 body {
   background: #f4f2ec url(assets/fundo.png) repeat-x;
   font: 12px 'Lucida Grande', 'Lucida Sans Unicode', Arial, Sans-serif;
@@ -71,7 +81,7 @@ nav ul li a:hover {
 #conteudo {
   width: 710px;
   /* float: left; */
-
+margin-bottom: 20px;
   margin-right: 15px;
 }
 
@@ -79,6 +89,8 @@ aside {
   width: 350px;
   /* float: right; */
   background: #ebe7dd;
+  margin-bottom: 20px;
+  
 }
 
 section#visita {
@@ -86,6 +98,14 @@ section#visita {
   padding: 10px 27px 27px 27px;
   margin-top: 10px;
 }
+
+h3 {
+  color: #227115;
+  font-size: 1.0em;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
 
 h4 {
   color: #86521a;
@@ -131,23 +151,85 @@ section a img {
 }
 
 section#galeria a {
-padding: 17px 15px 18px 15px;
+  padding: 17px 15px 18px 15px;
   background: url(assets/fundo-foto.png) no-repeat;
-margin: 10px 0 0 20px;
-   /* float: left;  */
+  margin: 10px 0 0 20px;
+  /* float: left;  */
 }
- section#galeria {
+section#galeria {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
- 
-
-} 
-
-
+  margin-bottom: 25px;
+}
 
 div h4 {
- margin-left: 25px;
+  margin-left: 25px;
+}
+
+/* Mapa video artigos  */
+
+section#postagens{
+display: flex;
+align-items: center;
+
+}
+section#artigos{
+display: flex;
+align-items: center;
+
+
+}
+
+section#artigos ul {
+  
+  text-transform: uppercase;
+  
+}
+
+article#video {
+  width: 310px;
+  margin-left: 25px;
+  margin-right: 25px;
+
+}
+
+article#museu{
+  width: 310px;
+  margin-left: 25px;
  
+  
+}
+
+article#exposicoes{
+  width: 310px;
+  /* margin-left: 25px;
+  margin-right: 40px;
+ margin-top: 20px; */
+ margin: 15px 0 0 25px;
+  
+}
+
+
+
+article#historia {
+  width: 310px;
+ margin: 15px 0 0 25px;
+}
+
+
+/* Rodapé */
+
+footer {
+  padding: 20px 0 30px 0;
+  text-align: center;
+  background: url(assets/fundo-rodape.png) no-repeat center top;
+  margin-top: 20px;
+  
+}
+
+footer p a {
+  padding: 2px 10px;
+  text-align: center;
 }
